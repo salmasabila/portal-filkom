@@ -1,0 +1,166 @@
+:root{
+--navy:#1F2A44;
+--sidebar:#263553;
+--orange:#F39C12;
+--bg:#F4F6F9;
+--card:#FFFFFF;
+--text:#2C3E50;
+--border:#D6DBDF;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:var(--bg);
+}
+
+header{
+height:70px;
+background:var(--navy);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+color:white;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+.container{
+    display:flex;
+    min-height:calc(100vh - 70px);
+}
+
+.sidebar{
+    width:250px;
+    background:var(--sidebar);
+    display:flex;
+    flex-direction:column;
+    flex-shrink:0;
+}
+
+.sidebar a{
+color:white;
+text-decoration:none;
+padding:18px;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.sidebar a:hover{
+background:var(--orange);
+}
+
+main{
+flex:1;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+.sidebar a.active{
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+}
+.page-title{
+    margin-bottom:20px;
+    color:var(--navy);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:var(--navy);
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.7;
+    color:#555;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:var(--navy);
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f8f9fa;
+}
+.page-title{
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+.card{
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.card p{
+    line-height: 1.8;
+    color: #555;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:var(--navy);
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f8f9fa;
+}
